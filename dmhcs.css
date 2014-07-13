@@ -1,0 +1,38 @@
+body{
+	background-color:#0066FF;
+}
+		
+/*home (center div) styling*/
+		
+#homeCenter{
+	margin-left:auto;
+	margin-right:auto;
+	width:75%;
+	height:90%;
+	border:1px solid black;
+}
+/*navigation Bar styling*/
+#navigationBar{
+	width:100%;
+	height:15%;
+	margin-top:0;
+	position:relative;
+	text-align:center;
+	color:white;
+	background-color:#003366;
+	border:1px solid #003366;
+}
+ul{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+li{
+	display:inline-block;
+}
+li:hover{
+	cursor:pointer;
+}
+.otherLI{
+	margin-left:3%;
+}
