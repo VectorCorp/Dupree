@@ -1,12 +1,31 @@
 body{
 	background-color:#0066FF;
 }
+/*header styling*/
+
+#header{
+	text-align:center;
+}
+#header h1{
+	font-family:"Script MT Bold",cursive;
+	font-size:450%;
+	margin-top:0;
+}
+#header h2{
+	margin-top:-4%;
+}
+#header h3{
+	margin-top:-1%;
+}
+	
+/*end of header styling*/
 		
 /*home (center div) styling*/
 		
 #homeCenter{
 	margin-left:auto;
 	margin-right:auto;
+	margin-top:2%;
 	width:75%;
 	height:90%;
 	border:1px solid black;
@@ -34,7 +53,7 @@ li{
 
 li:hover{
 	cursor:pointer;
-	border-bottom:2px solid #0066FF;
+	color:blue;
 }
 .otherLI{
 	margin-left:3%;
@@ -43,9 +62,6 @@ li:hover{
 	padding-left:4%;	
 	width:60%;
 	text-align:justify;
-<<<<<<< HEAD:dmhcs.css
-}
-=======
 }
 .infoBox{
 	position:relative; 
@@ -53,23 +69,30 @@ li:hover{
 	left:20%; 
 	height:30%; 
 	width:30%; 
+	display:inline-block;
 }
 
 .infoBoxHeader{
 	margin:10px; 
-
 	color:red; 
 }
 
+/*end of home (center div) styling*/
+
+/*footer styling*/
+
 #footer{
 	
-	background-color: gray; 
-	margin-top:5%; 
-	width:100%; 
+	background-color:blue;
+	position:absolute;
+	left:0;
+	bottom:0; 
+	width:100%;
+	text-align:center;
 }
-<<<<<<< HEAD
+.otherp{
+	margin-top:-1.5%;
+}
 
+/*end of footer styling*/
 
-=======
->>>>>>> origin/Keon's-branch:css/dmhcs.css
->>>>>>> origin/Shakelia's-branch
