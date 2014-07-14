@@ -34,6 +34,7 @@ li{
 
 li:hover{
 	cursor:pointer;
+	border-bottom:2px solid #0066FF;
 }
 .otherLI{
 	margin-left:3%;
@@ -42,4 +43,24 @@ li:hover{
 	padding-left:4%;	
 	width:60%;
 	text-align:justify;
+<<<<<<< HEAD:dmhcs.css
 }
+=======
+}
+.infoBox{
+	position:relative; 
+	left:20%; 
+	size:50px; 
+}
+
+.infoBoxHeader{
+	margin:10px; 
+	background-color:blue; 
+	color:red; 
+}
+
+#servicesp{
+	
+	color:red; 
+}
+>>>>>>> origin/Keon's-branch:css/dmhcs.css
