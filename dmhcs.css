@@ -10,6 +10,7 @@ body{
 	width:75%;
 	height:90%;
 	border:1px solid black;
+	background-color:white;
 }
 /*navigation Bar styling*/
 #navigationBar{
@@ -18,21 +19,27 @@ body{
 	margin-top:0;
 	position:relative;
 	text-align:center;
-	color:white;
-	background-color:#003366;
-	border:1px solid #003366;
+	color:black;
+	padding-bottom:1%;
 }
 ul{
 	text-decoration:none;
 	text-transform:uppercase;
 	font-weight:bold;
+	margin-bottom:0;
 }
 li{
 	display:inline-block;
 }
+
 li:hover{
 	cursor:pointer;
 }
 .otherLI{
 	margin-left:3%;
+}
+#homeInfo{
+	padding-left:4%;	
+	width:60%;
+	text-align:justify;
 }
