@@ -19,9 +19,8 @@ body{
 	margin-top:0;
 	position:relative;
 	text-align:center;
-	color:white;
-	background-color:#003366;
-	border:1px solid #003366;
+	color:black;
+	padding-bottom:1%;
 }
 ul{
 	text-decoration:none;
@@ -32,6 +31,7 @@ ul{
 li{
 	display:inline-block;
 }
+
 li:hover{
 	cursor:pointer;
 	border-bottom:2px solid #0066FF;
@@ -43,6 +43,9 @@ li:hover{
 	padding-left:4%;	
 	width:60%;
 	text-align:justify;
+<<<<<<< HEAD:dmhcs.css
+}
+=======
 }
 .infoBox{
 	position:relative; 
@@ -64,5 +67,9 @@ li:hover{
 	margin-top:5%; 
 	width:100%; 
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/Keon's-branch:css/dmhcs.css
+>>>>>>> origin/Shakelia's-branch
