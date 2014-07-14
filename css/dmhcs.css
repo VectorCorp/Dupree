@@ -46,17 +46,23 @@ li:hover{
 }
 .infoBox{
 	position:relative; 
+	background-color:blue; 
 	left:20%; 
-	size:50px; 
+	height:30%; 
+	width:30%; 
 }
 
 .infoBoxHeader{
 	margin:10px; 
-	background-color:blue; 
+
 	color:red; 
 }
 
-#servicesp{
+#footer{
 	
-	color:red; 
+	background-color: gray; 
+	margin-top:5%; 
+	width:100%; 
 }
+
+
