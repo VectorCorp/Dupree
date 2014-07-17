@@ -1,6 +1,58 @@
 body{
 	background-color:#0066FF;
 }
+#container{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	z-index:-1;
+}
+/*mission header styling*/
+#mission{
+	border:1px solid blue;
+	background-color:blue;
+	color:white;
+	line-height:10%;
+	margin-left:62%;
+	width:30%;
+	text-align:center;
+	z-index:2;
+}
+#mission:before,#mission:after{
+	content:"";
+	position:absolute;
+	display:block;
+	bottom:57.5%;
+	border:1.5em solid #0000CC;
+	z-index:1;
+}
+#mission:before{
+	left:41%;
+	border-right-width:1.5em;
+	border-left-color:transparent;
+}
+#mission:after{
+	right:40.6%;
+	border-left-width:1.5em;
+	border-right-color:transparent;
+}
+#mission .mission:before{
+	content:"";
+	position:absolute;
+	display:block;
+	border-style:solid;
+	border-color:#000099 transparent transparent transparent;
+	bottom:60%;
+}
+#mission .mission:before{
+	left:50%;
+	border-width:1em 0 0 1em;
+}
+#mission .mission:after{
+	right:50%;
+	border-width:1em 1em 0 0;
+}
+/*end of mission header styling*/
 /*header styling*/
 
 #header{
@@ -25,10 +77,10 @@ body{
 #homeCenter{
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:2%;
+	margin-top:1%;
 	width:75%;
 	height:90%;
-	border:1px solid black;
+	border:1px solid blue;
 	background-color:white;
 }
 /*navigation Bar styling*/
@@ -41,18 +93,32 @@ body{
 	color:black;
 	padding-bottom:1%;
 }
-ul{
+#navList{
 	text-decoration:none;
 	text-transform:uppercase;
 	font-weight:bold;
+	font-family:Cambria,Georgia,serif;
 	margin-bottom:0;
+	font-size:130%;
 }
-li{
+.nav{
 	display:inline-block;
 }
 
-li:hover{
+.nav:hover{
 	cursor:pointer;
+}
+/*home, about, services, contact*/
+#home:hover{
+	color:blue;
+}
+#about:hover{
+	color:blue;
+}
+#services:hover{
+	color:blue;
+}
+#contact:hover{
 	color:blue;
 }
 .otherLI{
@@ -63,18 +129,36 @@ li:hover{
 	width:60%;
 	text-align:justify;
 }
+#infoBoxContainer{
+	background-color:blue;
+	width:100%;
+}
 .infoBox{
 	position:relative; 
-	background-color:blue; 
-	left:20%; 
+	background-color:white; 
+	border-style:ridge;/*5px dotted black;*/
+	border-width:thick;
 	height:30%; 
-	width:30%; 
+	/*width:30%;*/
 	display:inline-block;
+	padding:0.5%;
+}
+#servicesInfoBox{
+	width:98%;
 }
 
+#aboutInfoBox,#contactInfoBox{
+	margin-top:0.5%;
+}
+#aboutInfoBox{
+	width:60%;
+}
+#contactInfoBox{
+	width:35.6%;
+}
 .infoBoxHeader{
 	margin:10px; 
-	color:red; 
+	color:black; 
 }
 
 /*end of home (center div) styling*/
@@ -82,17 +166,106 @@ li:hover{
 /*footer styling*/
 
 #footer{
-	
 	background-color:blue;
 	position:absolute;
 	left:0;
-	bottom:0; 
+	bottom:0;
+	height:8%; 
 	width:100%;
 	text-align:center;
+	display:none;
+}
+#firstp{
+	margin-top:-0.1%;
+	padding-top:0.3%;
 }
 .otherp{
 	margin-top:-1.5%;
 }
 
-/*end of footer styling*/
 
+/*end of footer styling*/
+/*services styling*/
+.services{
+	float:left;
+}
+#servicesp{
+	float:left;
+	margin-right:40%;
+	margin-top:-1%;
+	z-index:2;
+	margin-left:1%;
+}
+#firstImg{
+		float:right;
+		width:40%;
+		height:35%;
+		margin-top:-12%;
+		margin-right:0.3%;
+		z-index:1;
+}
+#servicesInfoBox{
+	margin-top:0.5%;
+}
+
+/*end of services styling*/
+/*infobox header h3 styling*/
+.infoBoxHeader h3{
+	text-transform:uppercase;
+	font-family:Cambria,Georgia,serif;
+	display:inline-block;
+}
+/*end of infobox header h3 styling*/
+/*"more" button styling*/
+.buttons{
+		width:10%;
+		height:15%;
+		border-radius:100%;
+		text-transform:uppercase;
+		color:white;
+		font-weight:bold;
+		background-color:blue;
+}
+.buttons:hover{
+	cursor:pointer;
+	background-color:black;
+}
+#servicesButton,#aboutButton,#contactButton{
+	position:relative;	
+	float:left;
+}
+#servicesButton{
+	margin-left:45%;
+}
+#aboutButton{
+	margin-left:50%;
+	width:15.5%;
+}
+#contactButton{
+	margin-left:55%;
+	width:25%;
+}
+/*end of button styling*/
+.aboutp,#contactp{
+	margin-top:-3%;
+	margin-left:1%;
+}
+/*contact div styling*/
+#contactHeader{
+	margin-top:1%;
+}
+.contactp{
+	text-align:center;
+}
+.first_contactp{
+	margin-top:-7%;
+}
+.other_contactp2{
+	margin-top:-1.5%;
+}
+table{
+	margin-top:-3%;
+}
+.other_contactp{
+	margin-top:-3%;
+}

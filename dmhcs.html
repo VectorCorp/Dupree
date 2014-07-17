@@ -5,7 +5,9 @@
 	<meta keywords="mobile healthcare, Dupree, south carolina, healthcare">
 	<title>Dupree Mobile Health Care Services</title>
 	<link rel="stylesheet" href="css/dmhcs.css" />
-</head>
+	<script src="jquery-1.11.0.min.js"></script>
+	<script src="dmhcs.js"></script>
+	<script src="scrollMagic/scrollMagic/js/jquery.scrollmagic.min.js"></script>
 <body>
 	<div id="container">
 		<div id="header">
@@ -15,43 +17,76 @@
 		</div>
 		<div id="homeCenter">
 			<div id="navigationBar">
-				<ul>
-					<li id="home">Home</li>
-					<li id="services" class="otherLI">Our Services</li>
-					<li id="about" class="otherLI">About Us</li>
-					<li id="contact" class="otherLI">Contact Us</li>
+				<ul id="navList">
+					<li class="nav"id="home">Home</li>
+					<li class="nav otherLI" id="services">Our Services</li>
+					<li class="nav otherLI" id="about">About Us</li>
+					<li class="nav otherLI" id="contact">Contact Us</li>
 				</ul>
 			</div>
 			<div id="homeInfo">
+				<div id="mission"><h2 class="mission">Our Mission</h2></div>
 				<p><i>"As a youth, I observed my grandparents being transferred to various nursing facilities seeking professional and compassionate individuals committed to caring for their needs with love and patience, to no avail. Therefore, as an adult, I committed myself to finding a qualified sponsor to assist me with this goal. With the help of my patents I was afforded an opportunity to bring my vision to fruition, and by the grace of God, I have been blessed to employ compassionate, competent, and professional individuals who are God-fearing and devoted to the task. As proprietor and CEO, our committment to provide quality service is foremost."</i></p>
 			</div>
 		
-		
+		<div id="infoBoxContainer">
 			<div id="servicesInfoBox" class="infoBox"> 
 			
 				<div id="servicesHeader" class="infoBoxHeader"> 
-					<h3> Services </h3>
+					<h3>Services&nbsp;&nbsp;</h3>
 				</div>
-			
-				<p id="servicesp">This is placeholder text for the services infobox</p>
+				<p id="servicesp">Dupree Mobile Health Care Services strives to provide the best care available. That is why only professionally trained and qualified CNA's, PCA's and CCT's are provided for our clients' health care needs. In addition to the best caregivers, we also provide:</p>
+				<br />
+				<ul class="services">
+					<li>Meal Preparation</li>
+					<li>Lawn Care</li>
+					<li>Light Housekeeping</li>
+				</ul>
+				<ul class="services">
+					<li>Individualized Care Plan</li>
+					<li>Wake up and tuck in service</li>
+					<li>Transportation/Errands</li>
+				</ul>
+				<img id="firstImg" src="images/caregivers.jpg" />
+				<button type="submit" id="servicesButton" class="buttons">More</button>
 			
 			</div>
 			<div id="aboutInfoBox" class="infoBox">
 				<div id="aboutHeader" class="infoBoxHeader">
 					<h3>About Us</h3>
 				</div>
-				<p id="aboutp">This is a placeholder text for the about us infobox</p>
+				<p class="aboutp">Our motto is "You can count on us!". We boast the most vigorous hiring procedures in the industry to ensure our Certified Nursing Assistants, Personal Care Assistants, and Client Care Technicians deliver the best care possible.</p><br />
+				<p class="aboutp">We believe our unique non-medical services will provide dignity and independence through heartfelt care and committment.</p>
+				<button type="submit" id="aboutButton" class="buttons">More</button>
 			</div>
 			<div id="contactInfoBox" class="infoBox">
 				<div id="contactHeader" class="infoBoxHeader">
 					<h3>Contact Us</h3>
 				</div>
-				<p id="contactp">This is a placeholder text for the contact infobox</p>
+				<p class="contactp first_contactp">We are available any time you need!</p>
+				<p class="contactp other_contactp">24 Hours/7 Days a Week</p>
+					<table>
+						<tr>
+							<td>Office:</td>
+							<td>864-520-2040</td>
+						</tr>
+						<tr>
+							<td>After Hours:</td>
+							<td>864-325-4126</td>
+						</tr>
+						<tr>
+							<td>Fax:</td>
+							<td>864-520-2041</td>
+						</tr>
+					</table>
+				<p class="contactp other_contactp2">Call us today for a FREE consultation!</p>
+				<button type="submit" id="contactButton" class="buttons">More</button>
 			</div>
 		
 		</div>
+		</div>
 		<div id="footer"> 
-			<p>Thanks for visiting!</p>
+			<p id="firstp">Thanks for visiting!</p>
 			<p class="otherp">Copyright &copy; 2014 Infinity, LLC and Dupree Mobile Health Care Services.</p>
 			<p class="otherp"><b>Site by: Infinity, LLC</b></p>
 		</div>
