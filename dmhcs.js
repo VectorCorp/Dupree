@@ -14,8 +14,8 @@ $(document).ready(function(){
 			$("#servicesInfoBox").css('border','5px ridge');
 	});
 });
-$(document).ready(function($){
-	controller = new ScrollMagic();
-	
-	var scene1 = new ScrollScene().setPin("#footer").addTo(controller);
+$(document).ready(function(){
+	$("#homeInfo_p").lettering();
+	$(".char1").css({'font-size':'250%','font-weight':'bold','font-family':"'Script MT Bold',cursive"});
+	$(".char2").css({'font-size':'250%','font-weight':'bold','font-family':"'Script MT Bold',cursive"});
 });

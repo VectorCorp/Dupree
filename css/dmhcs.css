@@ -7,7 +7,7 @@ body{
 #container{
 	width:100%;
 	height:100%;
-	overflow:hidden;
+	overflow:scroll;
 	z-index:-1;
 }
 /*header styling*/
@@ -36,7 +36,7 @@ body{
 	margin-right:auto;
 	margin-top:-6%;
 	width:75%;
-	height:90%;
+	height:64%;
 	border:1px solid blue;
 	background-color:white;
 }
@@ -77,31 +77,12 @@ body{
 	width:96%;
 	height:33%;
 }
-#homeInfo p{
-	width:60%;
-	margin-top:4%;
+.quotes{
+	width:50%;
+	margin-top:8%;
+	font-style:italic;
 }
-#homeInfo:before,#homeInfo:after{
-	content:'';
-	display:block;
-	height:35.5%;
-	width:18%;
-	border:3px solid black;
-	position:absolute;
-}
-#homeInfo:before{
-	left:0;
-	border-right:0;
-	margin-top:-3%;
-	margin-left:13%;
-}
-#homeInfo:after{
-	right:0;
-	border-left:0;
-	margin-right:13%;
-	margin-top:-7.1%;
-	height:35.4%;
-}
+
 #infoBoxContainer{
 	background-color:blue;
 	width:100%;
@@ -116,19 +97,7 @@ body{
 	display:inline-block;
 	padding:0.5%;
 }
-#servicesInfoBox{
-	width:98%;
-}
 
-#aboutInfoBox,#contactInfoBox{
-	margin-top:0.5%;
-}
-#aboutInfoBox{
-	width:60%;
-}
-#contactInfoBox{
-	width:35.6%;
-}
 .infoBoxHeader{
 	margin:10px; 
 	color:black; 
@@ -146,7 +115,6 @@ body{
 	height:8%; 
 	width:100%;
 	text-align:center;
-	display:none;
 }
 #firstp{
 	margin-top:-0.1%;
@@ -172,13 +140,14 @@ body{
 #firstImg{
 		float:right;
 		width:40%;
-		height:110%;
-		margin-right:4%;
-		margin-top:-8%;
+		height:115%;
+		margin-right:5%;
+		margin-top:-14%;
 		z-index:1;
 }
-#servicesInfoBox{
+.infoBox{
 	margin-top:0.5%;
+	width:31%;
 }
 
 /*end of services styling*/
@@ -189,36 +158,6 @@ body{
 	display:inline-block;
 }
 /*end of infobox header h3 styling*/
-/*"more" button styling*/
-.buttons{
-		width:10%;
-		height:15%;
-		border-radius:100%;
-		text-transform:uppercase;
-		color:white;
-		font-weight:bold;
-		background-color:blue;
-}
-.buttons:hover{
-	cursor:pointer;
-	background-color:black;
-}
-#servicesButton,#aboutButton,#contactButton{
-	position:relative;	
-	float:left;
-}
-#servicesButton{
-	margin-left:45%;
-}
-#aboutButton{
-	margin-left:50%;
-	width:15.5%;
-}
-#contactButton{
-	margin-left:55%;
-	width:25%;
-}
-/*end of button styling*/
 .aboutp,#contactp{
 	margin-top:-3%;
 	margin-left:1%;
