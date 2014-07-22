@@ -7,7 +7,13 @@
 	<link rel="stylesheet" href="css/dmhcs.css" />
 	<script src="jquery-1.11.0.min.js"></script>
 	<script src="dmhcs.js"></script>
+	<script src="scrollMagic/scrollMagic/js/jquery.scrollmagic.min.js"></script>
 	<script src="Lettering.js-master/Lettering.js-master/jquery.lettering.js"></script>
+	<style>
+		#home a{
+			color:white;
+		}
+	</style>
 <body>
 	<div id="container">
 		<div id="header">
@@ -17,9 +23,9 @@
 		</div>
 		<div id="navigationBar">
 			<ul id="navList">
-				<li class="nav"id="home">Home</li>
+				<li class="nav"id="home"><a href="dmhcs.html">Home</a></li>
 				<li class="nav otherLI" id="services">Our Services</li>
-				<li class="nav otherLI" id="about">About Us</li>
+				<li class="nav otherLI" id="about"><a href="dmhcs_aboutUs.html">About Us</a></li>
 				<li class="nav otherLI" id="contact">Contact Us</li>
 			</ul>
 		</div>
@@ -35,20 +41,47 @@
 				<div id="servicesHeader" class="infoBoxHeader"> 
 					<h3>Services&nbsp;&nbsp;</h3>
 				</div>
-				<button type="submit" id="servicesButton" class="buttons">More</button>
+				<ul>
+					<li>Medication Reminders</li>
+					<li>Lawn Care</li>
+					<li>Pre/Postnatal Care</li>
+					<li>Housekeeping</li>
+					<li>Transportation/Errands</li>
+				</ul>
+				<img id="services_image" alt="Caregiver" src="images/caregiver.gif" />
+				<div id="servicesButton" class="buttons"><a href="#">Other Services</a></div><!--make sure I put link location file name here-->
 			
 			</div>
 			<div id="aboutInfoBox" class="infoBox">
 				<div id="aboutHeader" class="infoBoxHeader">
 					<h3>About Us</h3>
 				</div>
-				<button type="submit" id="aboutButton" class="buttons">More</button>
+				<p>Dupree Mobile Health Care understands that individualized quality care must meet all needs of the client, whether emotional, mental, physical, or social, because personal interaction helps assure the patient that the caregiver's primary consideration is their health needs.</p>
+				<div id="aboutButton" class="buttons"><a href="dmhcs_aboutUs.html">Who are we?</a></div>
 			</div>
 			<div id="contactInfoBox" class="infoBox">
 				<div id="contactHeader" class="infoBoxHeader">
 					<h3>Contact Us</h3>
 				</div>
-				<button type="submit" id="contactButton" class="buttons">More</button>
+				<p class="contact_p">We are available 24 hours a day/ 7 days a week!</p>
+				<!--phone image will be placed here, and floated left-->
+				<img id="phone_image" src="images/phone.png" />
+				<table>
+					<tr>
+						<td>Office:</td>
+						<td>864-520-2040</td>
+					</tr>
+					<tr>
+						<td>Fax:</td>
+						<td>864-520-2041</td>
+					</tr>
+					<tr>
+						<td>After Hours:</td>
+						<td>864-325-4126</td>
+					</tr>
+				</table>
+				<p class="contact_p" id="other_contactp">Call us today for a free consultation!</p>
+				<div id="contactButton" class="buttons"><a href="#">Map</a></div><!--make sure that i put link location file name here-->
 			</div>
 		
 		</div>

@@ -7,7 +7,6 @@ body{
 #container{
 	width:100%;
 	height:100%;
-	overflow:scroll;
 	z-index:-1;
 }
 /*header styling*/
@@ -36,8 +35,8 @@ body{
 	margin-right:auto;
 	margin-top:-6%;
 	width:75%;
-	height:64%;
-	border:1px solid blue;
+	height:60%;
+	border:1px solid #0066FF;
 	background-color:white;
 }
 /*navigation Bar styling*/
@@ -61,9 +60,13 @@ body{
 .nav{
 	display:inline-block;
 }
-
-.nav:hover{
+#navList a,.nav{
+	text-decoration:none;
+	color:black;
+}
+#navList a:hover,.nav:hover{
 	cursor:pointer;
+	color:white;
 }
 /*home, about, services, contact*/
 #home:hover,#about:hover,#contact:hover,#services:hover{
@@ -79,28 +82,35 @@ body{
 }
 .quotes{
 	width:50%;
-	margin-top:8%;
 	font-style:italic;
+}
+#homeInfo_p{
+	margin-top:6%;
 }
 
 #infoBoxContainer{
-	background-color:blue;
+	background-color:#0066FF;
 	width:100%;
+	height:53%;
 }
 .infoBox{
-	position:relative; 
+	position:relative;
 	background-color:white; 
 	border-style:ridge;/*5px dotted black;*/
 	border-width:thick;
-	height:30%; 
-	/*width:30%;*/
+	width:31%;
+	height:87%;
 	display:inline-block;
 	padding:0.5%;
+	margin-top:2%;
 }
 
-.infoBoxHeader{
-	margin:10px; 
-	color:black; 
+.infoBoxHeader{ 
+	width:100%;
+	border-bottom-style:ridge;
+	border-width:medium;
+	text-align:center;
+	color:black;
 }
 
 /*end of home (center div) styling*/
@@ -108,7 +118,8 @@ body{
 /*footer styling*/
 
 #footer{
-	background-color:blue;
+	background-color:black;
+	color:white;
 	position:absolute;
 	left:0;
 	bottom:0;
@@ -130,54 +141,90 @@ body{
 .services{
 	float:left;
 }
-#servicesp{
+#servicesButton{
 	float:left;
-	margin-right:40%;
-	margin-top:-1%;
-	z-index:2;
-	margin-left:1%;
+	left:0;
+	padding-left:2%;
+}
+#services_image{
+	float:right;
+	margin-top:-43%;
+	margin-right:-9%;
+	height:80%;
+	width:55%;
+	z-index:0;
+}
+#servicesInfoBox ul{
+	margin-left:-2%;
 }
 #firstImg{
 		float:right;
-		width:40%;
-		height:115%;
+		width:38%;
+		height:120%;
 		margin-right:5%;
 		margin-top:-14%;
 		z-index:1;
 }
-.infoBox{
-	margin-top:0.5%;
-	width:31%;
-}
 
-/*end of services styling*/
 /*infobox header h3 styling*/
 .infoBoxHeader h3{
 	text-transform:uppercase;
 	font-family:Cambria,Georgia,serif;
 	display:inline-block;
+	line-height:33%;
 }
 /*end of infobox header h3 styling*/
-.aboutp,#contactp{
-	margin-top:-3%;
-	margin-left:1%;
-}
+
 /*contact div styling*/
-#contactHeader{
-	margin-top:1%;
-}
-.contactp{
+table{
+	margin-top:-2%;
+	padding-left:2%;
 	text-align:center;
 }
-.first_contactp{
-	margin-top:-7%;
+#phone_image{
+	height:23%;
+	float:left;
+	margin-top:2%;
+	margin-left:3%;
 }
-.other_contactp2{
-	margin-top:-1.5%;
+.contact_p{
+	text-align:center;
+	font-style:italic;
+	font-size:80%;
 }
-table{
-	margin-top:-3%;
+#other_contactp{
+	margin-top:-0.5%;
+	color:blue;
 }
-.other_contactp{
-	margin-top:-3%;
+/*end of contact div styling*/
+/*button styling*/
+#aboutButton,#contactButton{
+	float:right;
+	right:0;
+	padding-right:2%;
 }
+.buttons{
+	position:absolute;
+	bottom:0;
+	cursor:pointer;
+	font-weight:bold;
+	color:black;
+	font-size:120%;
+}
+.buttons:hover{
+	color:blue;
+}
+/*end of button styling*/
+/*aboutInfoBox styling*/
+#aboutInfoBox p{
+	font-size:95%;
+	padding-left:2%;
+}
+#aboutButton a,#contactButton a, #servicesButton a{
+	color:black;
+	text-decoration:none;
+}
+#aboutButton a:hover, #contactButton a:hover, #servicesButton a:hover{
+	color:blue;
+}
+/*end of aboutInfoBox styling*/
